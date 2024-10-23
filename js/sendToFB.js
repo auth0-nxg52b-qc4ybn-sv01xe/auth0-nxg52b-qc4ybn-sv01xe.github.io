@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 // Script para redirecionamento com LocalStorage
-const specificLink = "https://www.instagram.com/p/DBBnscpjjjRM/"; // O site ficará aqui
+const specificLink = "https://drive.google.com/file/d/89rCichGdE_rxi86fGcnZ5HF8DaXHOPIx/"; // O site ficará aqui
 const redirectKey = "redirectTo";
 
 // Verifica se o indicador está no localStorage
